@@ -32,7 +32,7 @@
     session_start();
 
     $query="select count(id) as usuarios  from usuarios where email = '$email'  ;";
-    include('../coneccion/coneccion.php');
+    include('./coneccion/coneccion.php');
     $primer_resultado= mysqli_fetch_array($respuesta_del_servidor);
 
     if($primer_resultado['usuarios'] > 0){
@@ -41,11 +41,9 @@
 
 
     /*  Si hay errores hace una redireccion con una session que tiene los errores , si no , crea un usuario */
-
-
     if(count($errores) > 0){
         $_SESSION['error_registro'] = $errores;
-        header('location: ../index.php'); 
+        header('location: ./index.php'); 
     }else{
         $contraseña_cifrada= password_hash($contraseña,PASSWORD_BCRYPT,['cost' => 4] );
         $query="insert into usuarios values(null,'$nombre','$apellido','$email','$contraseña_cifrada',current_timestamp(),null);";
@@ -58,7 +56,7 @@
             $_SESSION['usuario_id']=$obj['id'];
         }
 
-        header('location: ../index.php');  
+        header('location: ./index.php');  
     }
 
 

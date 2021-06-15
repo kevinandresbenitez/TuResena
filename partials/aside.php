@@ -3,7 +3,7 @@
 <div class="container__form">
 
 
-    <form action="./private/ingresar.php" method="POST">
+    <form action="./ingresar.php" method="POST">
         <div class="item iniciar__sesion">
 
             <div class="Error">
@@ -29,7 +29,7 @@
         </div>
     </form>
 
-    <form action="./private/registro.php" method="POST">
+    <form action="./registro.php" method="POST">
         <div class="item registrar__sesion" >
             <div class="Error">
                 <?PHP  

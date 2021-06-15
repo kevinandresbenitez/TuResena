@@ -1,19 +1,21 @@
 <?php
 
-include('../partials/header.php');
+include('./partials/header.php');
 
+    /* Verificar la sesion de el usuario */
 if(empty($_SESSION['usuario_id'])){
     header('location: ../index.php'); 
 }
 
+    /* Para crear la nueva publicacion  */
 if(isset($_POST['categoria_id']) && isset($_POST['titulo']) && isset($_POST['contenido'])){
     $query = "insert into entradas values(null,'$_SESSION[usuario_id]','$_POST[categoria_id]','$_POST[titulo]','$_POST[contenido]',current_timestamp());";
-    include('../coneccion/coneccion.php');
+    include('./coneccion/coneccion.php');
     header('location: ./misEntradas.php'); 
 }
 
 $query = "select * from categorias";
-include('../coneccion/coneccion.php');
+include('./coneccion/coneccion.php');
 
 
 
@@ -65,4 +67,4 @@ include('../coneccion/coneccion.php');
 
 
 
-<?PHP include('../partials/footer.php');?>
+<?PHP include('./partials/footer.php');?>

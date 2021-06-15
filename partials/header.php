@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!--- Para las paginas publicas --->
+    <!--- Para los paginas estilos --->
     <link rel="stylesheet" href="./publics/css/partials/header.css">
     <link rel="stylesheet" href="./publics/css/partials/aside.css">
     <link rel="stylesheet" href="./publics/css/partials/footer.css">
@@ -18,24 +18,10 @@
 
 
     <link rel="stylesheet" href="./publics/css/index.css">
+    <link rel="stylesheet" href="./publics/css/editar-crear2.css">
 
 
-    <!--- Para las paginas privadas --->
-    <link rel="stylesheet" href="../publics/css/partials/header.css">
-    <link rel="stylesheet" href="../publics/css/partials/aside.css">
-    <link rel="stylesheet" href="../publics/css/partials/footer.css">
-    <link rel="stylesheet" href="../publics/css/Root.css">
-
-    <link rel="stylesheet" href="../publics/libraries/fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="stylesheet" href="../publics/libraries/normalize/normalize.css">
-    <link rel="stylesheet" href="../publics/fonts/fonts.css">
-
-    <link rel="stylesheet" href="../publics/css/index.css">
-    <link rel="stylesheet" href="../publics/css/editar-crear2.css">
-
-
-
-
+    <!--- Para ani-js y animate.css --->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
     <title>Ultimas Entradas</title>
@@ -94,10 +80,10 @@
                         </button>
         
                         <div class="dropdown_content">
-                            <a href="./private/agregarEntradas.php"><i class="fas fa-plus"></i> <p> Agregar </p></a>
-                            <a href="./private/misEntradas.php"><i class="fas fa-paste"></i> <p> Mis publicaciones </p></a>
-                            <a href="./private/configuracion.php"><i class="fas fa-cog"></i> <p>Configuraciones </p></a>
-                            <a href="./private/cerrarsesion.php"><i class="fas fa-sign-out-alt"></i> <p> Cerrar sesion </p></a>
+                            <a href="./agregarEntradas.php"><i class="fas fa-plus"></i> <p> Agregar </p></a>
+                            <a href="./misEntradas.php"><i class="fas fa-paste"></i> <p> Mis publicaciones </p></a>
+                            <a href="./configuracion.php"><i class="fas fa-cog"></i> <p>Configuraciones </p></a>
+                            <a href="./cerrarsesion.php"><i class="fas fa-sign-out-alt"></i> <p> Cerrar sesion </p></a>
                         </div>
         
                     </div>';
