@@ -18,7 +18,9 @@
 
 
     <link rel="stylesheet" href="./publics/css/index.css">
-    <link rel="stylesheet" href="./publics/css/editar-crear2.css">
+    <link rel="stylesheet" href="./publics/css/editar-crear.css">
+    <link rel="stylesheet" href="./publics/css/configuraciones.css">
+
 
 
     <!--- Para ani-js y animate.css --->
@@ -42,14 +44,12 @@
         </label>
 
         <div class="navbar__logo">
-            <p>LOGO</p>
+            <p>Reseñas.com</p>
         </div>
 
         <div class="navbar__items animate__animated activa " id='lo'>
             <a href="./">Inicio</a>
-            <a href="#">Paginas Recientes</a>
-            <a href="#">item</a>
-            <a href="#">item</a>
+            <a href="./acerca_de.php">Acerca de</a>
         </div>
 
         <div class="navbar__user">

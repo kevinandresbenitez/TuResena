@@ -159,6 +159,10 @@
     }
 }
 @media(max-width:500px){
+    #titulo_principal{
+        font-size: 26px;
+    }
+
     .formulario__buscar{
         justify-content:center;
     }

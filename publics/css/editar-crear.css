@@ -82,10 +82,14 @@ font-weight: 900;
 }
 
 @media  (max-width:500px){
-.form_entradas > div {
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-    justify-content: space-between;
+    #titulo_principal{
+        font-size: 26px;
+    }
+
+    .form_entradas > div {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        justify-content: space-between;
     }
 }

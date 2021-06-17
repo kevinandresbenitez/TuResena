@@ -86,8 +86,7 @@
         <h2 id="Sin_resultados" class="item animate__animated" data-anijs="if:scroll,on:window,do: animate__fadeInLeft,before:$scrollReveal" >
             No se encontraron resultados ...
         </h2>
-    <?PHP endif;?>
-                
+    <?PHP endif;?>    
             
 
             <div class="articulo__mostrar_mas animate__animated" data-anijs='if:scroll,on:window,do: animate__fadeInLeft,to: .articulo__mostrar_mas,before:$scrollReveal'>

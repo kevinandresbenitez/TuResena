@@ -2,6 +2,8 @@
     <p>Todos los derechos reservados</p>
 </footer>
 
+
+
     <!--- Para Ani-js --->
     <script src="./publics/libraries/anijs-master/dist/anijs-min.js"></script>
     <script src="./publics/libraries/anijs-master/dist/helpers/dom/anijs-helper-dom-min.js"></script>
