@@ -1,15 +1,14 @@
 <?PHP
+    /*Inicio la session y verifico la info que me llega por post*/
+    session_start();
     $email = isset ($_POST['Email']) ? $_POST['Email'] :false;
     $contraseña = isset($_POST['Contraseña']) ? $_POST['Contraseña'] :false;
-
 
      /* obetener la contraseña cifrada de este email   */
     $query="select contrasena from usuarios where email = '$email';";
     include('./coneccion/coneccion.php');
     $primer_resultado=mysqli_fetch_array($respuesta_del_servidor);
     $contraseña_cifrada= $primer_resultado['contrasena'];
-
-    session_start();
 
      /* Verifico si este usuario existe  */
     if(password_verify($contraseña,$contraseña_cifrada)){

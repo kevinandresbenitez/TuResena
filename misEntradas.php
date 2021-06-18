@@ -1,12 +1,15 @@
 <?PHP 
-    /* Header */
+    /* Inicio session y verifico que el usuario haya iniciado session */
+    session_start();
+    if(empty($_SESSION['usuario_id'])){
+        header('location: ./index.php'); 
+    }
+    
+    /*Definicion de el titulo y el header */
     $pagina_titulo='Mis entradas';
     include_once('./partials/header.php'); 
-
-    if(empty($_SESSION['usuario_id'])){
-        header('location: http://localhost:8081/PHP/Proyecto-PHP/index.php'); 
-    }
-
+    
+    
         /* Paginacion y busquda*/
 
         if(!empty($_GET['page']) && $_GET['page'] &&(int)$_GET['page'] ){                                    

@@ -1,10 +1,12 @@
 <?php
+/*Inicio session y defino el nombre de la pagina*/
+session_start();
 $pagina_titulo='Agregar Entradas';
-include('./partials/header.php');
 
-    /* Verificar la sesion de el usuario */
+
+/* Verificar la sesion de el usuario */
 if(empty($_SESSION['usuario_id'])){
-    header('location: ../index.php'); 
+    header('location: ./index.php'); 
 }
 
     /* Para crear la nueva publicacion  */
@@ -13,7 +15,10 @@ if(isset($_POST['categoria_id']) && isset($_POST['titulo']) && isset($_POST['con
     include('./coneccion/coneccion.php');
     header('location: ./misEntradas.php'); 
 }
+/*Importo el header*/
+include('./partials/header.php');
 
+/*Hago la consulta importando las conecciones*/
 $query = "select * from categorias";
 include('./coneccion/coneccion.php');
 

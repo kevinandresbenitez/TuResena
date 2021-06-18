@@ -1,10 +1,9 @@
-
-
 <?PHP 
-    /* Header */
+    /* Importo el Header he inicio la session*/
+    session_start();
     $pagina_titulo='Ultimas entradas';
     include_once('./partials/header.php'); 
-
+    
     /* Paginacion y busquda*/
 
     if(!empty($_GET['page']) && $_GET['page'] &&(int)$_GET['page'] ){                                    
@@ -113,6 +112,7 @@
 
     <?PHP include_once('./partials/aside.php');?>  
 </div>
+
 
 <?PHP include_once('./partials/footer.php') ?>
 

@@ -1,6 +1,8 @@
 <?PHP
-    $db = mysqli_connect('localhost','root','','proyecto-php'); 
-
+        
+    /*Inicio de session*/
+    session_start();
+    $db = mysqli_connect('localhost','root','','proyecto-php');     
     /*  Se buscan errores en los parametros de ingreso*/
     $nombre = isset($_POST['Nombre']) ? mysqli_real_escape_string($db,$_POST['Nombre']) :false;
     $apellido = isset($_POST['Apellido']) ?  mysqli_real_escape_string($db,$_POST['Apellido']) :false;
@@ -27,10 +29,6 @@
     }
 
     /*  Se buscan emails ya registrados*/
-
-
-    session_start();
-
     $query="select count(id) as usuarios  from usuarios where email = '$email'  ;";
     include('./coneccion/coneccion.php');
     $primer_resultado= mysqli_fetch_array($respuesta_del_servidor);

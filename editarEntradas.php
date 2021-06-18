@@ -1,14 +1,16 @@
 <?PHP
+    /*Inicio session y defino el titulo de la pagina*/
+    session_start();
     $pagina_titulo='Editar Entradas';
-    include('./partials/header.php');
+    
 
 
      /* Para verificar sesion de el usuario y si hay una publicacion que modificar */
     if(empty($_SESSION['usuario_id'])){
-        header('location: http://localhost:8081/PHP/Proyecto-PHP/index.php'); 
+        header('location: ./index.php'); 
     }
     if(empty($_GET['entrada'])){
-        header('location: http://localhost:8081/PHP/Proyecto-PHP/index.php'); 
+        header('location: ./index.php'); 
     }
     
     /* Verifico que esta publicacion exista y que le pertenezca al usuario */
@@ -19,7 +21,7 @@
 
     /* Si no existe ninguna publicacion de ese usuario redirecciona */
     if(!$entrada){
-        header('location: http://localhost:8081/PHP/Proyecto-PHP/index.php'); 
+        header('location: ./index.php'); 
     }
 
     /* Modifica la publicacion con la informacion de el formulario */
@@ -33,11 +35,11 @@
     if(isset($_GET['entrada']) && isset($_GET['borrar']) && $entrada ){
         $query = "delete from entradas where id = $_GET[entrada]";
         mysqli_query($db,$query);
-        header('location: http://localhost:8081/PHP/Proyecto-PHP/misEntradas.php'); 
+        header('location: ./misEntradas.php'); 
     }
 
-
-
+    /*Importo el header*/
+    include('./partials/header.php');
 
 ?>
        

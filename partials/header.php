@@ -53,7 +53,6 @@
         <div class="navbar__user">
             <?PHP
                  /* Si el usuario inicio secion muestra el apartado de configuraciones  */
-                session_start();
 
                 if(isset($_SESSION['usuario_id'])){
 

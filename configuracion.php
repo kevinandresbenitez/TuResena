@@ -1,6 +1,8 @@
 <?PHP 
+
+    /*Definiendo el titulo y verificando si el usuario innicio session*/
+    session_start();
     $pagina_titulo='Configuraciones';
-    include('./partials/header.php');
 
     if(empty($_SESSION['usuario_id'])){
         header('location: ./index.php'); 
@@ -38,7 +40,8 @@
         }
     }
 
-
+    /* Importo el header*/
+    include('./partials/header.php');
 
 ?>
 
@@ -49,7 +52,7 @@
 <div class="container_conf">
     <div class="configuraciones">
         <div class='configuraciones_user_foto' >
-            <?= $usuario['foto'] ?  "<img  src=./publics/users/$usuario[foto] alt=foto_perfil>":"<span id=nel class='img_perfil_svg'><i class='fas fa-user'></i></span>" ?>
+            <?= $usuario['foto'] ?  "<img  src=./publics/users/$usuario[foto].png alt=foto_perfil>":"<span id=nel class='img_perfil_svg'><i class='fas fa-user'></i></span>" ?>
 
             <form action="./configuracion.php" class="config_buttons" method="POST" enctype="multipart/form-data" >
                 <div>
