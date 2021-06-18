@@ -1,5 +1,5 @@
 <?PHP
-
+    $pagina_titulo='Editar Entradas';
     include('./partials/header.php');
 
 

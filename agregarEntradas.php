@@ -1,5 +1,5 @@
 <?php
-
+$pagina_titulo='Agregar Entradas';
 include('./partials/header.php');
 
     /* Verificar la sesion de el usuario */

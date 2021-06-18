@@ -1,5 +1,6 @@
 <?PHP 
     /* Header */
+    $pagina_titulo='Mis entradas';
     include_once('./partials/header.php'); 
 
     if(empty($_SESSION['usuario_id'])){

@@ -1,5 +1,5 @@
 <?PHP 
-
+    $pagina_titulo='Configuraciones';
     include('./partials/header.php');
 
     if(empty($_SESSION['usuario_id'])){

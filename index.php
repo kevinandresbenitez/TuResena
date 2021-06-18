@@ -2,6 +2,7 @@
 
 <?PHP 
     /* Header */
+    $pagina_titulo='Ultimas entradas';
     include_once('./partials/header.php'); 
 
     /* Paginacion y busquda*/
