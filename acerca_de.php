@@ -22,9 +22,9 @@
 <div class="container" style="margin-bottom: 100vh;">
     <p>Hola , mi nombre es kevin , este es un proyecto realizado con php puro , ani-js ,animate.css 
     , puedes encontrar el codigo de este proyecto en mi repositorio de
-     <strong>GitHub</strong> </p>
+     <strong>GitHub</strong> <a href="https://github.com/kevinandresbenitez/TuResena">Ir a github</a> </p>
     
-    <a href=""></a>
+    
 </div>
 
 <?PHP include('./partials/footer.php');?>
